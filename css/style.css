@@ -1,0 +1,363 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0;
+	margin: 0;
+
+}
+
+/* Global */
+.container{
+	width: 80%;
+	margin:auto;
+	oveflow:hidden;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+
+
+/* Header */
+header{
+	background: #333;
+	color: white;
+	padding-top:30px;
+	min-height: 80px;
+	border-bottom:red 3px solid;
+}
+
+header a{
+	color:white;
+	text-decoration: none;
+	font-size:18px;
+}
+
+header li{
+	float:left;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+header #title{
+	float:left;
+	font-family: Apple Chancery;
+	font-size: 120%;
+}
+
+header #title h1{
+	margin:0;
+}
+
+
+header nav{
+	float:right;
+	margin-top:20px;
+}
+
+header .current a{
+	color:red;
+}
+
+header a:hover{
+	color:red;
+}
+
+
+
+
+/* Showcase */
+#showcase{
+	min-height: 700px;
+	background:url('../img/Cover.jpg') no-repeat ;
+	background-size: cover;
+	background-position: top;
+
+	text-align: center;
+	color: white;
+	border-bottom:black 3px solid;
+}
+#about
+{
+
+	width: 55%;
+	float:left;
+	margin-left: 5%;
+	border-left: red 3px solid;
+	margin-top: 50px;
+
+}
+#about h1{
+	margin: 0;
+	padding-left: 3%;
+	font-size: 200%;
+	font-family: Times New Roman, Courier, Apple Chancery,proxima-nova;
+	float:left;
+}
+#about p{
+	margin:0;
+	float:left;
+  padding-left: 3%;
+	padding-top:10px;
+	font-family: Times New Roman;
+	font-size: 155%;
+	text-align: left;
+}
+
+#boxes{
+	margin-top:40px;
+}
+
+#boxes .box {
+	float:left;
+	text-align:center;
+	width:30%;
+	padding:10px;
+}
+
+#boxes .box img{
+	width:110px;
+	height:110px;
+}
+
+
+/*footer*/
+footer{
+	clear:both;
+}
+footer #copyright{
+	float:left;
+}
+footer #icons{
+	padding-top:10px;
+	float:right;
+}
+
+footer .icon{
+	float:left;
+	padding-right:8px;
+	height:27px;
+	width:27px;
+}
+footer img{
+	opacity: .70;
+}
+footer img:hover{
+	opacity: 1;
+}
+
+
+/*audio */
+.audio{
+	padding:20px;
+}
+
+
+
+/*photos */
+#photos{
+	margin-top: 40px;
+}
+
+#photos img{
+	padding: 10px 0 10px 0;
+	filter: grayscale(100%)
+}
+#photos img:hover{
+	filter:grayscale(0%);
+}
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+
+@media (max-width: 850px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+
+}
+@media (max-width: 460px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+
+
+
+
+}
+
+/*Blog*/
+#blog{
+	width:80%;
+	margin:auto;
+	margin-top:40px;
+
+
+	overflow: hidden;
+
+}
+@media (max-width:760px){
+	#blog{
+		width:95%;
+	}
+
+}
+
+#blogshowcase{
+	width:100%;
+	background:#000;
+	height:0px;
+	float:left;
+	margin-bottom: 20px;
+}
+
+.post{
+	margin-bottom:20px;
+	padding-bottom:15px;
+	background:#eee;
+
+}
+.post h2, h4{
+	text-align: center;
+}
+.post p{
+	padding:2px 10px 2px 10px;
+
+}
+.post img{
+	width:100%;
+}
+
+
+/* Media Queries */
+@media(max-width: 850px) {
+	header #title,
+	header nav,
+	header nav li{
+		float:none;
+		text-align: center;
+		width:100%;
+	}
+	header{
+		padding-bottom: 20px;
+	}
+	#boxes .box{
+		float:none;
+		text-align: center;
+		width:100%;
+		padding:20px;
+	}
+
+
+}
+@media(max-width:500px){
+	#about{
+		width: 70%;
+	}
+	footer #icons{
+		float: left;
+	}
+	footer .icon{
+		float: left;
+		width:10%;
+		padding-left: 7%;
+		height:auto;
+	}
+	footer #copyright {
+		padding-left: 25%;
+		text-align: center;
+	}
+}
+
+/*
+
+header{
+	background: #333;
+	color: white;
+	margin: 0;
+	padding:2% 2% 2% 2%;
+}
+
+h1{
+	margin:0;
+	display: inline;
+}
+
+nav ul{
+	margin:0;
+	padding:0px 0px 0px 15px;
+	display: inline;
+}
+
+nav ul li{
+	color:white;
+	display:inline;
+	padding: 5px 15px;
+	margin:0;
+}
+
+nav ul li a{
+	color:white;
+}
+
+.row:after{
+	clear:both;
+	content: " ";
+	display: table;
+	margin-left: 1%;
+}
+
+
+.col{
+	background:grey;
+	float:left;
+	width:28%;
+	border-radius: 5px;
+	margin: 2%;
+	height: 80%;
+	padding: .5%;
+}
+
+div.col{
+	height: 30em;
+	border:1%;
+	border-color: #444
+}
+.center{
+	text-align:center;
+}
+h1{
+	font-size:200%;
+
+}
+a{
+	color:black;
+	text-decoration: none;
+}
+a:hover{
+	color:white;
+}
+
+*/
