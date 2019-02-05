@@ -149,7 +149,10 @@ footer img:hover{
 
 
 /*audio */
-.audio{
+.soundcloud{
+	margin-top: 20px;
+}
+.track {
 	padding:20px;
 }
 
@@ -162,7 +165,7 @@ footer img:hover{
 
 #photos img{
 	padding: 10px 0 10px 0;
-	filter: grayscale(100%)
+	filter: grayscale(100%);
 }
 #photos img:hover{
 	filter:grayscale(0%);
