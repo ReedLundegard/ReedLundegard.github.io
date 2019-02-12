@@ -21,7 +21,7 @@ ul{
 
 /* Header */
 header{
-	background: #333;
+	background: black;
 	color: white;
 	padding-top:30px;
 	min-height: 80px;
@@ -150,10 +150,10 @@ footer img:hover{
 
 /*audio */
 .soundcloud{
-	margin-top: 20px;
+	padding-top: 40px;
 }
-.track {
-	padding:20px;
+.track{
+	padding: 20px;
 }
 
 
