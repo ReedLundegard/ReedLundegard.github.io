@@ -22,7 +22,7 @@ ul{
 /*Background Painting*/
 #imbalance{
 	background: black;
-	background-image: url("/Users/reed/Desktop/ReedLundegard.github.io/img/EP/EP COVER.jpg");
+	background-image: url("../img/EP/EP COVER.jpg");
 	min-height: 14900px;
 	width:100%
 	background-position: center;
